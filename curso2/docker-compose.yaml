@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db:
+    image: mysql:8.0
+    restart: no
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: jogoteca
+    ports:
+      - "3306:3306"
